@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\DashboardController;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return redirect(route('login'));
+});
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
