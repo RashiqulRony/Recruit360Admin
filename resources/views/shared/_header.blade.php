@@ -48,7 +48,7 @@
                 </a>
                 <a href="#" class="dropdown-notification-item">
                     <div class="dropdown-notification-icon">
-                        <i class="far fa-user-circle fa-lg fa-fw text-muted"></i>
+                        <img src="{{ Avatar::create('Account created')->toBase64() }}" alt="" width="26">
                     </div>
                     <div class="dropdown-notification-info">
                         <div class="title">3 new customer account is created</div>
@@ -60,7 +60,7 @@
                 </a>
                 <a href="#" class="dropdown-notification-item">
                     <div class="dropdown-notification-icon">
-                        <img src="{{ asset('assets/img/icon/android.svg') }}" alt="" width="26">
+                        <img src="{{ Avatar::create('Android App')->toBase64() }}" alt="" width="26">
                     </div>
                     <div class="dropdown-notification-info">
                         <div class="title">Your android application has been approved</div>
@@ -72,7 +72,7 @@
                 </a>
                 <a href="#" class="dropdown-notification-item">
                     <div class="dropdown-notification-icon">
-                        <img src="{{ asset('assets/img/icon/paypal.svg') }}" alt="" width="26">
+                        <img src="{{ Avatar::create('Paypal payment')->toBase64() }}" alt="" width="26">
                     </div>
                     <div class="dropdown-notification-info">
                         <div class="title">Paypal payment method has been enabled for your store</div>
@@ -90,7 +90,7 @@
         <div class="menu-item dropdown">
             <a href="#" data-bs-toggle="dropdown" data-display="static" class="menu-link">
                 <div class="menu-img online">
-                    <img src="{{ asset('assets/img/user/user.jpg') }}" alt="" class="ms-100 mh-100 rounded-circle">
+                    <img src="{{ Avatar::create('Mr Admin')->toBase64() }}" alt="" class="ms-100 mh-100 rounded-circle">
                 </div>
                 <div class="menu-text"><span class="__cf_email__">MR. ADMIN</span></div>
             </a>
